@@ -92,15 +92,17 @@
       h = canvas.height = canvas.offsetHeight;
     };
 
+    const palette = ['42,93,148', '201,143,31'];
     const makeParticles = () => {
-      const count = w < 700 ? 18 : 34;
+      const count = w < 700 ? 14 : 26;
       particles = Array.from({ length: count }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
         r: Math.random() * 1.8 + 0.6,
         vx: (Math.random() - 0.5) * 0.15,
         vy: (Math.random() - 0.5) * 0.15,
-        a: Math.random() * 0.5 + 0.15
+        a: Math.random() * 0.35 + 0.12,
+        c: palette[Math.random() < 0.7 ? 0 : 1]
       }));
     };
 
@@ -112,7 +114,7 @@
         if (p.y < 0) p.y = h; if (p.y > h) p.y = 0;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(236,195,71,${p.a})`;
+        ctx.fillStyle = `rgba(${p.c},${p.a})`;
         ctx.fill();
       });
       if (!reduceMotion) requestAnimationFrame(draw);

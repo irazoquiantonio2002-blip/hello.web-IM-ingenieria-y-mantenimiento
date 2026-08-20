@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Favicon -->
-  <link rel="icon" href="img/logo-icon.png" type="image/png">
+  <link rel="icon" href="img/logo.png" type="image/png">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
@@ -53,12 +53,16 @@
             <span>IMIN</span>
             <span>Ingeniería y Mantenimiento</span>
           </div>
+          <div class="nav-logo-machine" aria-hidden="true">
+            <img src="img/logo-maquina.jpg" alt="" loading="eager">
+          </div>
         </a>
 
         <nav aria-label="Navegación principal">
           <ul class="nav-links">
             <li><a href="#why">Nosotros</a></li>
             <li><a href="#ambientes">Servicios</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
             <li><a href="#proceso">Proceso</a></li>
             <li><a href="#producto">Resultados</a></li>
             <li><a href="#sectores">Sectores</a></li>
@@ -81,6 +85,7 @@
     <div id="mob-menu" aria-label="Menú móvil">
       <a href="#why">Nosotros</a>
       <a href="#ambientes">Servicios</a>
+      <a href="#catalogo">Catálogo</a>
       <a href="#proceso">Proceso</a>
       <a href="#producto">Resultados</a>
       <a href="#sectores">Sectores</a>
@@ -95,80 +100,99 @@
   <main>
     <section id="hero" aria-labelledby="hero-heading">
 
-      <!-- Parallax background image (fixed) -->
+      <!-- Light gradient-mesh background -->
       <div class="hero-bg" aria-hidden="true"></div>
-      <!-- Dark overlays -->
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="hero-vignette" aria-hidden="true"></div>
       <!-- Grid texture -->
       <div class="hero-grid" aria-hidden="true"></div>
       <!-- Canvas particle orbs -->
       <canvas id="hero-canvas" aria-hidden="true"></canvas>
-
-      <!-- Light shafts -->
-      <div class="hero-rays" aria-hidden="true">
-        <div class="hero-ray r1"></div>
-        <div class="hero-ray r2"></div>
-        <div class="hero-ray r3"></div>
-        <div class="hero-ray r4"></div>
-        <div class="hero-ray r5"></div>
-      </div>
-      <!-- Film grain overlay -->
-      <div class="hero-grain" aria-hidden="true"></div>
       <!-- One-shot scan reveal -->
       <div class="hero-scanline" aria-hidden="true"></div>
 
       <div class="container">
         <div class="hero-content">
+          <div class="hero-grid-layout">
 
-          <!-- Live badge -->
-          <div class="hero-badge" id="hero-badge" aria-hidden="true">
-            <div class="badge-dot"></div>
-            Servicio en Campo e Instalaciones · Querétaro, Qro.
-          </div>
+            <div>
+              <!-- Live badge -->
+              <div class="hero-badge" id="hero-badge" aria-hidden="true">
+                <div class="badge-dot"></div>
+                Servicio en Campo e Instalaciones · Querétaro, Qro.
+              </div>
 
-          <!-- Animated title -->
-          <h1 class="hero-title" id="hero-heading">
-            <span class="line"><span>Su maquinaria</span></span>
-            <span class="line"><span>no puede parar.</span></span>
-            <span class="line"><span class="accent">Nosotros tampoco.</span></span>
-          </h1>
+              <!-- Animated title -->
+              <h1 class="hero-title" id="hero-heading">
+                <span class="line"><span>Su maquinaria</span></span>
+                <span class="line"><span>no puede parar.</span></span>
+                <span class="line"><span class="accent">Nosotros tampoco.</span></span>
+              </h1>
 
-          <!-- Subtitle -->
-          <p class="hero-sub" id="hero-sub">
-            En IMIN <strong>reparamos, reconstruimos y maquinamos</strong> maquinaria pesada, equipos mineros e industria en general. Soluciones confiables, con garantía por escrito, en campo o en nuestras instalaciones.
-          </p>
+              <!-- Subtitle -->
+              <p class="hero-sub" id="hero-sub">
+                En IMIN <strong>reparamos, reconstruimos y maquinamos</strong> maquinaria pesada, equipos mineros e industria en general. Soluciones confiables, con garantía por escrito, en campo o en nuestras instalaciones.
+              </p>
 
-          <!-- CTAs -->
-          <div class="hero-ctas" id="hero-ctas">
-            <a href="#contacto" class="btn-gold">
-              Solicitar Cotización
-              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
-            </a>
-            <a href="#ambientes" class="btn-outline">
-              <i class="fa-solid fa-gears" style="font-size:15px; color:var(--gray);"></i>
-              Ver Servicios
-            </a>
-          </div>
+              <!-- CTAs -->
+              <div class="hero-ctas" id="hero-ctas">
+                <a href="#contacto" class="btn-gold">
+                  Solicitar Cotización
+                  <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+                </a>
+                <a href="#ambientes" class="btn-outline">
+                  <i class="fa-solid fa-gears" style="font-size:15px; color:var(--gray);"></i>
+                  Ver Servicios
+                </a>
+              </div>
 
-          <!-- Trust bar -->
-          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
-            <div class="trust-item">
-              <i class="fa-solid fa-shield-halved"></i>
-              Garantía por escrito
+              <!-- Trust bar -->
+              <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+                <div class="trust-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  Garantía por escrito
+                </div>
+                <div class="trust-divider" aria-hidden="true"></div>
+                <div class="trust-item">
+                  <i class="fa-solid fa-truck-fast"></i>
+                  Cobertura Nacional
+                </div>
+                <div class="trust-divider" aria-hidden="true"></div>
+                <div class="trust-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Querétaro, Qro.
+                </div>
+              </div>
             </div>
-            <div class="trust-divider" aria-hidden="true"></div>
-            <div class="trust-item">
-              <i class="fa-solid fa-truck-fast"></i>
-              Cobertura Nacional
-            </div>
-            <div class="trust-divider" aria-hidden="true"></div>
-            <div class="trust-item">
-              <i class="fa-solid fa-location-dot"></i>
-              Querétaro, Qro.
-            </div>
-          </div>
 
+            <!-- Framed photo panel -->
+            <div class="hero-visual" aria-hidden="true">
+              <div class="hero-visual-bg-machines"></div>
+              <div class="hero-visual-frame">
+                <img src="img/hero-taller.jpg" alt="" loading="eager">
+                <div class="hero-visual-scrim"></div>
+                <div class="hero-visual-corner tl"></div>
+                <div class="hero-visual-corner br"></div>
+                <div class="hero-visual-tag">
+                  <span class="t1">IMIN Taller</span>
+                  <span class="t2">Querétaro, Qro.</span>
+                </div>
+              </div>
+              <div class="hero-visual-badge">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                  <div class="hv-num">12 meses</div>
+                  <div class="hv-lbl">Garantía por escrito</div>
+                </div>
+              </div>
+              <div class="hero-visual-photo2">
+                <img src="img/local-taller.jpg" alt="">
+                <div>
+                  <div class="hv-num">Nuestro Local</div>
+                  <div class="hv-lbl">Querétaro, Qro.</div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.hero-grid-layout -->
         </div><!-- /.hero-content -->
       </div>
 
@@ -274,55 +298,213 @@
 
           <!-- Sistemas Hidráulicos -->
           <div class="amb-card reveal">
-            <img class="amb-img"
-              src="img/servicio-hidraulicos.jpg"
-              alt="Cilindro hidráulico pulido y reconstruido por IMIN">
-            <div class="amb-overlay">
-              <div class="amb-icon-wrap"
-                   style="background:rgba(236,195,71,0.12); border-color:rgba(236,195,71,0.35);"
-                   aria-hidden="true">
-                <i class="fa-solid fa-oil-can" style="color:var(--gold);"></i>
+            <div class="amb-media">
+              <img class="amb-img"
+                src="img/servicio-hidraulicos.jpg"
+                alt="Cilindro hidráulico pulido y reconstruido por IMIN">
+              <span class="amb-temp-tag">Diagnóstico y pruebas incluidas</span>
+            </div>
+            <div class="amb-body">
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-oil-can"></i>
               </div>
               <h3>Sistemas Hidráulicos</h3>
               <p>Reparación de cilindros, bombas, motores y válvulas hidráulicas. Fabricación y reconstrucción de componentes.</p>
-              <div class="amb-temp">Diagnóstico y pruebas incluidas</div>
             </div>
           </div>
 
           <!-- Tren de Fuerza / Componentes -->
           <div class="amb-card reveal d1">
-            <img class="amb-img"
-              src="img/servicio-componentes.jpg"
-              alt="Componente hidráulico CAT reconstruido en taller IMIN">
-            <div class="amb-overlay">
-              <div class="amb-icon-wrap"
-                   style="background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.25);"
-                   aria-hidden="true">
-                <i class="fa-solid fa-gears" style="color:var(--steel);"></i>
+            <div class="amb-media">
+              <img class="amb-img"
+                src="img/servicio-componentes.jpg"
+                alt="Componente hidráulico CAT reconstruido en taller IMIN">
+              <span class="amb-temp-tag">Reconstrucción a especificación</span>
+            </div>
+            <div class="amb-body">
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-gears"></i>
               </div>
               <h3>Tren de Fuerza</h3>
               <p>Reparación de mandos finales, diferenciales, transmisiones y componentes de potencia de todas las marcas.</p>
-              <div class="amb-temp">Reconstrucción a especificación</div>
             </div>
           </div>
 
           <!-- Fabricación y Maquinado -->
           <div class="amb-card reveal d2">
-            <img class="amb-img"
-              src="img/servicio-maquinado.jpg"
-              alt="Maquinado de precisión de flecha en torno industrial IMIN"
-              loading="lazy">
-            <div class="amb-overlay">
-              <div class="amb-icon-wrap"
-                   style="background:rgba(236,195,71,0.12); border-color:rgba(236,195,71,0.35);"
-                   aria-hidden="true">
-                <i class="fa-solid fa-industry" style="color:var(--gold);"></i>
+            <div class="amb-media">
+              <img class="amb-img"
+                src="img/servicio-maquinado.jpg"
+                alt="Maquinado de precisión de flecha en torno industrial IMIN"
+                loading="lazy">
+              <span class="amb-temp-tag">Tornos de gran capacidad</span>
+            </div>
+            <div class="amb-body">
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-industry"></i>
               </div>
               <h3>Fabricación y Maquinado</h3>
               <p>Maquinado de precisión, recuperación de componentes por desgaste y fabricación de piezas sobre plano o muestra.</p>
-              <div class="amb-temp">Tornos de gran capacidad</div>
             </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CATÁLOGO — todas las categorías de servicio
+    ══════════════════════════════════════════════════ -->
+    <section id="catalogo" aria-labelledby="cat-heading">
+      <div class="container">
+
+        <div class="catalogo-hdr">
+          <div class="reveal">
+            <div class="label">Catálogo de Servicios</div>
+            <h2 class="section-title" id="cat-heading">
+              Cobertura completa,<br>
+              <span class="gold">de campo a taller</span>
+            </h2>
+          </div>
+          <p class="reveal d1">
+            Seis frentes de trabajo con personal capacitado, herramientas y equipo de precisión para atender cualquier falla de su equipo industrial.
+          </p>
+        </div>
+
+        <div class="catalogo-grid">
+
+          <div class="cat-card reveal">
+            <div class="cat-head">
+              <div class="cat-icon" aria-hidden="true"><i class="fa-solid fa-truck-monster"></i></div>
+              <h3>Maquinaria Pesada y Minería</h3>
+            </div>
+            <ul class="cat-list">
+              <li>Mantenimiento preventivo y correctivo</li>
+              <li>Camiones articulados y de carga</li>
+              <li>Cargadores frontales y excavadoras</li>
+              <li>Retroexcavadoras y motoconformadoras</li>
+              <li>Bulldozers y montacargas</li>
+            </ul>
+          </div>
+
+          <div class="cat-card reveal d1">
+            <div class="cat-head">
+              <div class="cat-icon" aria-hidden="true"><i class="fa-solid fa-oil-can"></i></div>
+              <h3>Sistemas Hidráulicos</h3>
+            </div>
+            <ul class="cat-list">
+              <li>Cilindros, bombas y motores hidráulicos</li>
+              <li>Válvulas y prensas hidráulicas</li>
+              <li>Porta powers y polipastos</li>
+              <li>Fabricación y reconstrucción de componentes</li>
+              <li>Pruebas y diagnóstico de sistemas</li>
+            </ul>
+          </div>
+
+          <div class="cat-card reveal d2">
+            <div class="cat-head">
+              <div class="cat-icon" aria-hidden="true"><i class="fa-solid fa-gears"></i></div>
+              <h3>Tren de Fuerza</h3>
+            </div>
+            <ul class="cat-list">
+              <li>Reparación de mandos finales</li>
+              <li>Reparación de diferenciales</li>
+              <li>Reparación de transmisiones</li>
+              <li>Ejes y componentes de potencia</li>
+            </ul>
+          </div>
+
+          <div class="cat-card reveal">
+            <div class="cat-head">
+              <div class="cat-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+              <h3>Motores</h3>
+            </div>
+            <ul class="cat-list">
+              <li>Reparación de motores diésel</li>
+              <li>Reparación de motores a gasolina</li>
+              <li>Diagnóstico y ajuste de motores</li>
+            </ul>
+          </div>
+
+          <div class="cat-card reveal d1">
+            <div class="cat-head">
+              <div class="cat-icon" aria-hidden="true"><i class="fa-solid fa-industry"></i></div>
+              <h3>Equipos Industriales</h3>
+            </div>
+            <ul class="cat-list">
+              <li>Reductores y motores eléctricos</li>
+              <li>Bombas de agua y centrífugas</li>
+              <li>Sopladores y compresores</li>
+              <li>Mantenimiento de equipos industriales</li>
+            </ul>
+          </div>
+
+          <div class="cat-card reveal d2">
+            <div class="cat-head">
+              <div class="cat-icon" aria-hidden="true"><i class="fa-solid fa-compass-drafting"></i></div>
+              <h3>Fabricación y Maquinado</h3>
+            </div>
+            <ul class="cat-list">
+              <li>Fabricación de piezas especiales</li>
+              <li>Maquinado de precisión</li>
+              <li>Recuperación de componentes por desgaste</li>
+              <li>Flechas, bujes, pernos y alojamientos</li>
+              <li>Piezas sobre plano o muestra</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         FOLLETOS — material corporativo
+    ══════════════════════════════════════════════════ -->
+    <section id="folletos" aria-labelledby="folletos-heading">
+      <div class="container">
+
+        <div class="folletos-hdr reveal">
+          <div class="label" style="justify-content:center;">Material Corporativo</div>
+          <h2 class="section-title" id="folletos-heading">
+            Conozca IMIN <span class="gold">a detalle</span>
+          </h2>
+          <p>Nuestras cartas de presentación y de servicios, listas para consultar o compartir con su equipo.</p>
+        </div>
+
+        <div class="folletos-grid">
+
+          <a class="folleto-card reveal" href="img/folleto-soluciones.jpg" target="_blank" rel="noopener noreferrer">
+            <div class="folleto-media">
+              <img src="img/folleto-soluciones.jpg" alt="Folleto Soluciones Integrales IMIN — quiénes somos, misión y servicios" loading="lazy">
+              <div class="folleto-expand" aria-hidden="true"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+              <div class="folleto-cap">
+                <span class="t1">Perfil de empresa</span>
+                <span class="t2">Soluciones Integrales</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="folleto-card reveal d1" href="img/folleto-presentacion.jpg" target="_blank" rel="noopener noreferrer">
+            <div class="folleto-media">
+              <img src="img/folleto-presentacion.jpg" alt="Carta de presentación IMIN — servicios y contacto" loading="lazy">
+              <div class="folleto-expand" aria-hidden="true"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+              <div class="folleto-cap">
+                <span class="t1">Documento oficial</span>
+                <span class="t2">Carta de Presentación</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="folleto-card reveal d2" href="img/folleto-servicios.jpg" target="_blank" rel="noopener noreferrer">
+            <div class="folleto-media">
+              <img src="img/folleto-servicios.jpg" alt="Carta de servicios IMIN — catálogo detallado de reparaciones" loading="lazy">
+              <div class="folleto-expand" aria-hidden="true"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+              <div class="folleto-cap">
+                <span class="t1">Documento oficial</span>
+                <span class="t2">Carta de Servicios</span>
+              </div>
+            </div>
+          </a>
 
         </div>
       </div>
@@ -417,8 +599,19 @@
 
           <div class="ad-pair reveal">
             <div class="ad-imgs">
-              <img src="img/antes-1.jpg" alt="Pieza hidráulica desgastada antes de la reparación IMIN" loading="lazy">
-              <img src="img/despues-1.jpg" alt="Cilindros hidráulicos pulidos y terminados después de la reparación IMIN" loading="lazy">
+              <img src="img/antes-1.jpg" alt="Vástago de cilindro oxidado antes de la reparación IMIN" loading="lazy">
+              <img src="img/despues-1.jpg" alt="Cilindros hidráulicos cromados y pulidos después de la reparación IMIN" loading="lazy">
+              <span class="ad-tag before">Antes</span>
+              <span class="ad-tag after">Después</span>
+              <div class="ad-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="ad-caption"><strong>Vástagos cromados</strong> — recuperación de medida y acabado espejo.</div>
+          </div>
+
+          <div class="ad-pair reveal d1">
+            <div class="ad-imgs">
+              <img src="img/antes-2.jpg" alt="Cilindro hidráulico desgastado antes de la reconstrucción IMIN" loading="lazy">
+              <img src="img/despues-2.jpg" alt="Flecha cromada terminada en torno de precisión IMIN" loading="lazy">
               <span class="ad-tag before">Antes</span>
               <span class="ad-tag after">Después</span>
               <div class="ad-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
@@ -428,13 +621,24 @@
 
           <div class="ad-pair reveal d2">
             <div class="ad-imgs">
-              <img src="img/antes-2.jpg" alt="Rosca de cilindro oxidada antes del maquinado IMIN" loading="lazy">
-              <img src="img/despues-2.jpg" alt="Vástagos cromados terminados después del maquinado IMIN" loading="lazy">
+              <img src="img/antes-3.jpg" alt="Buje interno oxidado antes del maquinado IMIN" loading="lazy">
+              <img src="img/despues-3.jpg" alt="Rosca de precisión maquinada en torno industrial IMIN" loading="lazy">
               <span class="ad-tag before">Antes</span>
               <span class="ad-tag after">Después</span>
               <div class="ad-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <div class="ad-caption"><strong>Vástagos cromados</strong> — recuperación de medida y acabado espejo.</div>
+            <div class="ad-caption"><strong>Maquinado de precisión</strong> — recuperación de roscas y ajuste exacto.</div>
+          </div>
+
+          <div class="ad-pair reveal d3">
+            <div class="ad-imgs">
+              <img src="img/antes-4.jpg" alt="Buje de desgaste oxidado antes de la reconstrucción IMIN" loading="lazy">
+              <img src="img/despues-4.jpg" alt="Vástagos pulidos listos para ensamble después de la reparación IMIN" loading="lazy">
+              <span class="ad-tag before">Antes</span>
+              <span class="ad-tag after">Después</span>
+              <div class="ad-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="ad-caption"><strong>Piezas de desgaste</strong> — reconstrucción y recubrimiento de precisión.</div>
           </div>
 
         </div>
@@ -617,20 +821,40 @@
 
         <div class="sectores-grid" role="list">
           <div class="sector-card reveal" role="listitem">
-            <i class="fa-solid fa-mountain sector-icon" aria-hidden="true"></i>
-            <h3>Minería</h3>
+            <div class="sector-media">
+              <img src="img/sector-mineria.jpg" alt="Camión minero de carga" loading="lazy">
+            </div>
+            <div class="sector-body">
+              <i class="fa-solid fa-mountain sector-icon" aria-hidden="true"></i>
+              <h3>Minería</h3>
+            </div>
           </div>
           <div class="sector-card reveal d1" role="listitem">
-            <i class="fa-solid fa-helmet-safety sector-icon" aria-hidden="true"></i>
-            <h3>Construcción</h3>
+            <div class="sector-media">
+              <img src="img/sector-construccion.jpg" alt="Excavadora en obra de construcción" loading="lazy">
+            </div>
+            <div class="sector-body">
+              <i class="fa-solid fa-helmet-safety sector-icon" aria-hidden="true"></i>
+              <h3>Construcción</h3>
+            </div>
           </div>
           <div class="sector-card reveal d2" role="listitem">
-            <i class="fa-solid fa-industry sector-icon" aria-hidden="true"></i>
-            <h3>Industria</h3>
+            <div class="sector-media">
+              <img src="img/sector-industria.jpg" alt="Cargador frontal industrial" loading="lazy">
+            </div>
+            <div class="sector-body">
+              <i class="fa-solid fa-industry sector-icon" aria-hidden="true"></i>
+              <h3>Industria</h3>
+            </div>
           </div>
           <div class="sector-card reveal d3" role="listitem">
-            <i class="fa-solid fa-screwdriver-wrench sector-icon" aria-hidden="true"></i>
-            <h3>Mantenimiento Industrial</h3>
+            <div class="sector-media">
+              <img src="img/sector-mantenimiento.jpg" alt="Grúa de arrastre en mantenimiento" loading="lazy">
+            </div>
+            <div class="sector-body">
+              <i class="fa-solid fa-screwdriver-wrench sector-icon" aria-hidden="true"></i>
+              <h3>Mantenimiento Industrial</h3>
+            </div>
           </div>
         </div>
 
@@ -757,7 +981,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="img/logo-icon.png" alt="" style="height:30px; width:30px;">
+          <img src="img/logo.png" alt="">
           <span>IMIN — Ingeniería y Mantenimiento Industrial</span>
         </div>
         <p class="footer-copy">
