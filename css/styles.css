@@ -255,7 +255,7 @@ section{ position:relative; padding:110px 0; }
 .badge-dot{ width:7px; height:7px; border-radius:50%; background:var(--gold); box-shadow:0 0 0 0 rgba(201,143,31,.6); animation:dot-pulse 2s ease-in-out infinite; }
 @keyframes dot-pulse{ 0%{ box-shadow:0 0 0 0 rgba(201,143,31,.55); } 70%{ box-shadow:0 0 0 8px rgba(201,143,31,0); } 100%{ box-shadow:0 0 0 0 rgba(201,143,31,0); } }
 
-.hero-title{ font-size:clamp(36px,4.6vw,58px); font-weight:800; line-height:1.1; letter-spacing:-.02em; color:var(--navy-950); margin-bottom:26px; }
+.hero-title{ font-size:clamp(44px,5.4vw,62px); font-weight:800; line-height:1.1; letter-spacing:-.02em; color:var(--navy-950); margin-bottom:26px; }
 .hero-title .line{ display:block; overflow:hidden; }
 .hero-title .line span{ display:inline-block; transform:translateY(110%); animation:line-rise .8s cubic-bezier(.22,1,.36,1) forwards; }
 .hero-title .line:nth-child(1) span{ animation-delay:.15s; }
